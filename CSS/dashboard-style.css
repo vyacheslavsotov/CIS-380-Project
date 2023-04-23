@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #fff;
+    overflow: hidden;
+}
+
+.container{
+  display: flex;
+
+}
+
+nav{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: #9a3324;
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+
+.logo img{
+  width: 50px;
+  height: 50px;
+}
+
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+a{
+  position: relative;
+  color: #fff;
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+
+a:hover{
+  background: #702418;
+}
+
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+
+/* Main */
+
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+
+ .main-top{
+  display: flex;
+  width: 100%;
+}
+
+.main-top a{
+  position: absolute;
+  right: 0;
+  margin: -5px -220px;
+  color: #9a3324;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.main-top a{
+  color: #9a3324;
+}
+
+.main-top a:hover {
+  color: #fff; 
+}
+
+
+
+
+/* Schedule */
+.schedule-card {
+  background-color: #fff;
+  border: 2px solid #9a3324;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 100%;
+  height: 300px;
+  overflow: auto;
+  margin: 15px 0;
+}
+
+.schedule-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.schedule-card-header h2 {
+  margin: 0;
+}
+
+.schedule-card-date {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.schedule-card-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.schedule-card-body th,
+.schedule-card-body td {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.schedule-card-body th {
+  background-color: #9a3324;
+  font-weight: bold;
+}
+
+.schedule-card-body td:nth-child(odd) {
+  background-color: #9a3324;
+}
+
+.schedule-card-body td {
+  background-color: #9a3324;
+  border: 1px solid #fff;
+}
+
+.schedule-card-body td:not(:empty):hover {
+  background-color: #9a3324;
+}
+
+.client-cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 0px;
+}
+
+.client-card {
+  background-color: #fff;
+  border: 2px solid #9a3324;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(50% - 10px);
+  margin-right: 2%;
+  height: 315px;
+  overflow: hidden; 
+  position: relative;
+}
+
+.client-card2 {
+  background-color: #fff;
+  border: 2px solid #9a3324;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  
+  margin-left: 2%;
+  height: 315px;
+  overflow: hidden; 
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .client-card {
+    width: 48%;
+    margin: 20px 0;
+  }
+
+  .client-card2 {
+    width: 50%;
+    margin: 20px 0 20px 0;
+  }
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.card-title2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.client-list-container {
+  padding-right: 15px; 
+  overflow-y: auto; 
+  height: calc(100% - 30px);
+}
+
+.client-list-container2 {
+  padding-right: 15px; 
+  overflow-y: auto; 
+  height: calc(100% - 30px);
+}
+
+.client-list-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.client-list-container2::-webkit-scrollbar {
+  width: 12px;
+}
+
+.client-list-container::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.client-list-container2::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.client-list-container::-webkit-scrollbar-thumb {
+  background-color: #9a3324;
+  border-radius: 10px;
+}
+
+.client-list-container2::-webkit-scrollbar-thumb {
+  background-color: #9a3324;
+  border-radius: 10px;
+}
+
+.client-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.client-list2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.client-item {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.client-item2 {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+

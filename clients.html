@@ -1,0 +1,112 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Client Table</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="CSS/clients-style.css" rel="stylesheet" type="text/css" />
+  <link href="img/favicon-32x32.png" rel="shortcut icon" type="image/x-icon" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="clients.js"></script>
+<button class="btnHome">Home</button>
+</head>
+<body>
+  <header>
+    <nav class="navigation">
+      <i class="fas fa-home"></i>
+      <button class="btnHome" onclick="window.location.href = 'dashboard.html';">Home</button>
+    </nav>
+  </header>
+    <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2>Client Table</b></h2></div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="small-column">ID</th>
+                       <th>Business Name</th>
+                        <th>Address</th>
+                      <th>Phone</th>
+                      <th class="wide-column">Email</th>
+                      <th>Notes</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1765</td>
+                        <td>Acme Inc</td>
+                        <td>123 Main St, Anytown USA</td>
+                      <td>555-123-4567</td>
+                      <td>info@acmeinc.com</td>
+                      <td></td>
+                        <td>
+							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons"></i></a>
+                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"></i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9943</td>
+                        <td>Best Buy</td>
+                        <td>456 Center St, Somewhere</td>
+                      <td>555-987-6543</td>
+                      <td>info@bestbuy.com</td>
+                      <td></td>
+                        <td>
+							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons"></i></a>
+                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"></i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8294</td>
+                        <td>Bright Ideas</td>
+                        <td>789 Elm St, Anytown USA</td>
+                      <td>555-234-5678</td>
+                      <td>info@brightideas.com</td>
+                      <td></td>
+                        <td>
+							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons"></i></a>
+                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"></i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"></i></a>
+                        </td>
+                    </tr> 
+                  <tr>
+                        <td>4201</td>
+                        <td>Cactus Corporation</td>
+                        <td>321 Oak St, Anytown USA</td>
+                    <td>555-876-5432</td>
+                    <td>info@cactuscorp.com</td>
+                    <td></td>
+                        <td>
+							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons"></i></a>
+                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"></i></a>
+                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>     
+</body>
+</html>     

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; UTF-8" />
+  <meta name="keywords" content="CRM, Federated Insuarance, Marketing" />
+  <meta name="description" content="CRM for Federated Insuarance" />
+  <link href="CSS/userconf-style.css" rel="stylesheet" type="text/css" />
+  <link href="img/favicon-32x32.png" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>User Settings</title>
+</head>
+ 
+<body>
+  <header>
+    <h2 class="logo">User Settings</h2>
+    <nav class="navigation">
+      <i class="fas fa-home"></i>
+      <button class="btnHome" onclick="window.location.href = 'dashboard.html';">Home</button>
+    </nav>
+  </header>
+
+  <div class="pict">
+    <img class="fed2" src="img/fed2.png">
+  </div>
+
+  <main>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="userId">User ID:</label>
+          <input type="text" id="userId" name="userId" value="695371" disabled>
+        </div>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" value="johndoe" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" value="password123" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" value="johndoe@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" value="555-555-1234" required>
+        </div>
+        <button class="btn-update">Update Profile</button>
+      </form>
+    </div>
+  </main>
+  
+
+  <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
